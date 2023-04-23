@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#009688"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnSelectImage"
+        android:layout_width="125dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="60dp"
+        android:background="#7A2121"
+        android:backgroundTint="@color/purple_200"
+        android:backgroundTintMode="add"
+        android:text="Seleccionar"
+        android:textSize="12dp"
+        app:iconTint="@color/teal_200"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgPreview"
+        app:strokeColor="@color/teal_700" />
+
+    <Button
+        android:id="@+id/btnSendWhatsApp"
+        android:layout_width="114dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="80dp"
+        android:text="WhatsApp"
+        android:textSize="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSelectImage"
+        tools:ignore="InvalidId" />
+
+    <Button
+        android:id="@+id/btnSendEmail"
+        android:layout_width="115dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="260dp"
+        android:layout_marginTop="76dp"
+        android:text="Otros"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSelectImage" />
+
+    <ImageView
+        android:id="@+id/imgPreview"
+        android:layout_width="307dp"
+        android:layout_height="264dp"
+        android:layout_marginTop="80dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/placeholder" />
+</androidx.constraintlayout.widget.ConstraintLayout>
